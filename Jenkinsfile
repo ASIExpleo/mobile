@@ -1,11 +1,18 @@
 pipeline {
-    agent any
-    stages {
-        stage('Example') {
-            steps { 
-                git credentialsId: 'main', url: 'https://github.com/ASIExpleo/mobile.git'
-                echo 'Pipeline Script for testing connection'
+  agent any
+
+stages {
+
+stage('build') {
+  steps {
+         echo "building----"
+             }
             }
-        }
-    }
+
+stage('test') {
+  steps {
+         echo "testing-----"
+             }
+                     }
+}
 }
