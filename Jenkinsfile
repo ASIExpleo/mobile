@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Example') {
             steps { 
-                echo 'Pipeline Script for testing'
+                echo 'Pipeline Script for testing connection'
             }
         }
     }
