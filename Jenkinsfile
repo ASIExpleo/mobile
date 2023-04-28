@@ -2,17 +2,23 @@ pipeline {
   agent any
 
 stages {
+  
+stage('pre build') {
+  steps {
+         echo "checkout code from git----"
+        }
+               }
 
 stage('build') {
   steps {
          echo "building----"
-             }
-            }
+        }
+               }
 
-stage('test') {
+stage('post build') {
   steps {
-         echo "testing-----"
-             }
-                     }
-}
+         echo "email recipient-----"
+         }
+              }
+      }
 }
